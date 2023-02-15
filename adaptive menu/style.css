@@ -3,12 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: grey;
+}
 #menu {
     width: 250px;
     height: 100vh;
-    background: #000;
+    background-color: #000;
     position:  fixed;
     left: -230px;
     top: 0;
-    transition: all ease 1s;
+    transition: 2s ease;
+}
+.ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    color: rgb(11, 23, 240);
+    font-size: 34;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    transition: 3.5s ease-out;
 }
