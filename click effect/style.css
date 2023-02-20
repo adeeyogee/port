@@ -15,9 +15,9 @@ body {
 }
 
 button {
-   background-color: purple;
+   background-color: rgb(22, 9, 164);
    color: #fff;
-   border: 1px purple solid;
+   border: 1px rgb(255, 255, 255) solid;
    font-size: 14px;
    text-transform: uppercase;
    letter-spacing: 2px;
@@ -38,12 +38,16 @@ button .circle {
    height: 100px;
    border-radius: 50%;
    transform: translate(-50%, -50%) scale(0);
-   animation: scale 0.5s ease-out;
+   animation: scale 0.2s ease-out;
+   animation-iteration-count: 2;
 }
 
+
+
+   /* В ключевых кадрах описываем параметры анимации. Эффект брызг будет увеличен в 2 раза относительно первоначального значения и станет прозрачным. */
 @keyframes scale {
    to {
-      transform: translate(-50%, -50%) scale(3);
+      transform: translate(-50%, -50%) scale(1);
       opacity: 0;
    }
 }
