@@ -29,3 +29,14 @@ buttons.forEach(button => {
       setTimeout(() => circle.remove(), 500)
    })
 })
+
+// Код формы поиска
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn-search')
+const input = document.querySelector('.input')
+
+//* По событию переключаем класс
+btn.addEventListener('click', () => {
+   search.classList.toggle('active')
+   input.focus()
+})

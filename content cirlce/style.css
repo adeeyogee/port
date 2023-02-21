@@ -32,7 +32,7 @@ body {
 }
 
 .circle{
-    background-color: #c52c62;
+    background-color: #c32019;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -52,10 +52,10 @@ transform: rotate(-70deg);
     height: 100px;
     background: transparent;
     border: 0;
-    font-size: 24px;
-    color: #fff;
+    line-height: 10px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
 }
-
 .circle button:focus {
     outline: none;
 }
