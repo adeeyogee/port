@@ -1,3 +1,4 @@
+/* Для удобства создаем переменные */
 :root {
    --left-bg-color: rgba(87, 84, 236, 0.7);
    --right-bg-color: rgba(43, 43, 43, 0.8);
@@ -6,10 +7,7 @@
    --hover-width: 75%;
    --other-width: 25%;
    --speed: 1000ms;
-
 }
-
-
 
 * {
    box-sizing: border-box;
@@ -33,6 +31,9 @@ h1 {
 }
 
 .btn {
+
+   /* используем rem, чтобы размер символов и элементов зависел от родителя (container) */
+
    position: absolute;
    display: flex;
    align-items: center;
@@ -82,20 +83,20 @@ h1 {
    background-size: cover;
 }
 
+.split.right {
+   right: 0;
+   background: url(Xb.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 
+/* Создаем оверлей для левого и правого блока */
 .split.left::before {
    content: '';
    position: absolute;
    width: 100%;
    height: 100%;
    background-color: var(--left-bg-color);
-}
-
-.split.right {
-   right: 0;
-   background: url(Xb.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
 }
 
 .split.right::before {
@@ -106,6 +107,7 @@ h1 {
    background-color: var(--right-bg-color);
 }
 
+/* Применим скорость анимации к блокам и оверлею */
 .split.right, 
 .split.left, 
 .split.right::before, 
@@ -116,17 +118,14 @@ h1 {
 .hover-left .left {
    width: var(--hover-width);
 }
-
 .hover-left .right {
-width: var(--other-width);
+   width: var(--other-width);
 }
-
 .hover-right .right {
    width: var(--hover-width);
 }
-
 .hover-right .left {
-width: var(--other-width);
+   width: var(--other-width);
 }
 
 @media (max-width: 800px) {
