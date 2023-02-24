@@ -1,6 +1,8 @@
+/* ___________Progress steps___________ */
+
 :root {
-    --line-border-fill: #180b49;
-    --line-border-empty: #e0e0e0
+    --line-border-fill: rgb(10, 12, 98);
+    --line-border-empty: rgb(114, 114, 114)
 }
 
 
@@ -9,7 +11,7 @@
 }
 
 body {
-    background-color: #ecf1f1;
+    background-color: rgb(149, 152, 152);
     font-family: 'Lucida Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -93,4 +95,31 @@ body {
 .btn:disabled {
     background-color: var(--line-border-empty);
     cursor: not-allowed;
+}
+
+/* ___________Adaptive menu___________ */
+
+#menu {
+    width: 270px;
+    height: 100vh;
+    background-color: rgb(10, 12, 98);
+    position:  fixed;
+    left: -220px;
+    top: 0;
+    transition: 1s ease;
+}
+.ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    color: rgb(201, 201, 201);
+    font-size: 34;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    transition: 3.5s ease;
+}
+
+.ul-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.55s opacity, 0.55s visibility;
 }
