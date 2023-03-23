@@ -14,11 +14,11 @@ const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 toggle.addEventListener('click', (e) => {
    const html = document.querySelector('html')
 
-   if (html.classList.contains('dark')) {
-      html.classList.remove('dark')
-      e.target.innerHTML = 'Dark mode'
+   if (html.classList.contains('orange')) {
+      html.classList.remove('orange')
+      e.target.innerHTML = 'Orange mode'
    } else {
-      html.classList.add('dark')
+      html.classList.add('orange')
       e.target.innerHTML = 'Light mode'
    }
 } )
@@ -29,7 +29,7 @@ function setTime() {
    const day = time.getDay()
    const date = time.getDate()
    const hours = time.getHours()
-   const hoursForClock = hours % 12
+   const hoursForClock = hours % 24
    const minutes = time.getMinutes()
    const seconds = time.getSeconds()
    const ampm = hours >= 12 ? 'PM' : 'AM'

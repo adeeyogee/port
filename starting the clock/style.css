@@ -4,19 +4,19 @@
 
 :root {
    --primary-color: #000;
-   --secondary-color: #fff;
+   --secondary-color: rgb(33, 203, 203);
 }
 
 html {
    transition: all 0.5s ease-in;
 }
 
-html.dark {
+html.orange {
    --primary-color: #fff;
-   --secondary-color: #333;
+   --secondary-color: rgb(43, 39, 39);
 }
 
-html.dark {
+html.orange {
    background-color: #e8940d;
    color: var(--primary-color)
 }
@@ -83,7 +83,7 @@ body {
 .needle.second {
    transform: translate(-50%, -100%) rotate(0deg);
    height: 100px;
-   background-color: #e74c3c;
+   background-color: var(--secondary-color);
 }
 
 .center-point {
@@ -114,8 +114,8 @@ body {
 }
 
 .date {
-   color: #aaa;
-   font-size: 16px;
+   color: var(--secondary-color);
+   font-size: 18px;
    letter-spacing: 0.3px;
    text-transform: uppercase;
 }
