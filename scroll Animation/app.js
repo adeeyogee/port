@@ -9,7 +9,7 @@ window.addEventListener('scroll', checkBoxes)
 
 function checkBoxes() {
 
-  //* По формуле приходим к необходимому для нас значению всплытия нового чекбокса. Мы не можем использовать фиксированное значение, т.к. размер window.innerHeight может меняться. Таким образом, в переменной triggerBottom будет лежать динамическое значение, благодаря которому мы можем создать условие появления нового чекбокса.
+  //* По формуле  приходим к необходимому для нас значению всплытия нового чекбокса. Мы не можем использовать фиксированное значение, т.к. размер window.innerHeight может меняться. Таким образом, в переменной triggerBottom будет лежать динамическое значение, благодаря которому мы можем создать условие появления нового чекбокса.
   
   const triggerBottom =  window.innerHeight / 6 * 4
 
@@ -27,7 +27,7 @@ function checkBoxes() {
  })
 }
 
-//____________Progress Bar____________
+//____________Progress Bar__________
 
 let fullHeight, innerHeight 
 const progressBar = document.querySelector('.progressbar>.progressbar-line')
